@@ -17,7 +17,7 @@ body {
   background: linear-gradient(
     to bottom,
     var(--background-color),
-    var(--primary-color)
+    #5f647b
   );
 }
 
@@ -131,6 +131,12 @@ i {
   gap: var(--default-gap);
 }
 /* End of Habilities */
+
+/* Start of Experience */
+.experiences i{
+    font-size: 1.35rem;
+}
+/* End of Experience */
 
 .row {
   display: grid;
