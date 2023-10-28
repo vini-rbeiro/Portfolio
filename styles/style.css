@@ -22,11 +22,15 @@ body {
 }
 
 h1 {
-  font-size: 1.94749rem;
+  font-size: 1.9106249rem;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 1.2rem;
+  letter-spacing: -0.625px;
+  margin: 1.25rem 0;
+  color: color-mix(in srgb, var(--white), white 40%);
 }
 
 p {
@@ -49,21 +53,14 @@ img {
 }
 
 /* Start of Header */
-#header{
-    min-height: 100vh;
+#header {
+  min-height: 100vh;
 }
-
 
 .personal-info {
   display: flex;
   align-items: center;
   gap: 4rem;
-}
-
-.personal-info_content_subtitle {
-  margin: 1.25rem 0;
-  color: color-mix(in srgb, var(--white), white 40%);
-  letter-spacing: -0.625px;
 }
 
 .personal-info_icons {
@@ -86,8 +83,20 @@ img {
 .header_image > img {
   box-shadow: 0px 15px 9px -6px rgba(0, 0, 0, 0.62);
 }
-
 /* End of Header */
+
+/* Start of About me */
+.about-me_description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--default-gap);
+}
+
+.about-me_containerImage > img {
+  box-shadow: 0px 15px 9px -6px rgba(0, 0, 0, 0.62);
+  display: none;
+}
+/* End of About me */
 
 .row {
   display: grid;
