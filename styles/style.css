@@ -7,6 +7,7 @@
   --white: #c4d0ec;
 
   --default-gap: 0.5rem;
+  --box-shadow: 0px 15px 9px -6px rgba(0, 0, 0, 0.62);
 }
 
 body {
@@ -14,11 +15,7 @@ body {
   color: var(--white);
 
   min-height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    var(--background-color),
-    #5f647b
-  );
+  background: linear-gradient(to bottom, var(--background-color), #5f647b);
 }
 
 h1 {
@@ -45,6 +42,11 @@ img {
 i {
   color: var(--white);
   padding: 0.2rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .maxWidth {
@@ -84,7 +86,7 @@ i {
 }
 
 .header_image > img {
-  box-shadow: 0px 15px 9px -6px rgba(0, 0, 0, 0.62);
+  box-shadow: var(--box-shadow);
 }
 /* End of Header */
 
@@ -96,7 +98,7 @@ i {
 }
 
 .about-me_containerImage > img {
-  box-shadow: 0px 15px 9px -6px rgba(0, 0, 0, 0.62);
+  box-shadow: var(--box-shadow);
   display: none;
 }
 /* End of About me */
@@ -133,10 +135,45 @@ i {
 /* End of Habilities */
 
 /* Start of Experience */
-.experiences i{
-    font-size: 1.35rem;
-}
+
 /* End of Experience */
+
+/* Start of Projects */
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.project_text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--default-gap);
+}
+
+.project .project_text_title i {
+  margin-left: var(--default-gap);
+  font-size: 1rem;
+  transition: transform 350ms ease-in-out;
+}
+
+.project .project_text_title a:hover i {
+  transform: translateX(7px);
+  transform: rotate(45deg);
+}
+
+.project_image img {
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+  height: 185px;
+  width: 100%;
+}
+/* End of Projects */
+
+/* Start of Curriculum */
+
+/* End of Curriculum */
 
 .row {
   display: grid;
