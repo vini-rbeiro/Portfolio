@@ -6,7 +6,7 @@
   --strong-highlight: #c05a43; /* Strong Highlight Color */
   --white: #c4d0ec;
 
-  --default-gap: 1.5rem;
+  --default-gap: 0.5rem;
 }
 
 body {
@@ -42,6 +42,11 @@ img {
   max-width: 100%;
 }
 
+i {
+  color: var(--white);
+  padding: 0.2rem 0;
+}
+
 .maxWidth {
   padding: 1rem;
   max-width: 94%;
@@ -71,8 +76,6 @@ img {
 
 .personal-info_icons i {
   font-size: 1.5rem;
-  color: var(--white);
-  padding: 0.2rem 0;
 }
 
 .header_image {
@@ -97,6 +100,37 @@ img {
   display: none;
 }
 /* End of About me */
+
+/* Start of Habilities */
+.habilities_technologies {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.habilities_technologies img {
+  width: 70px;
+  filter: grayscale(1);
+  transition: filter 350ms;
+}
+
+.habilities_technologies img:hover {
+  filter: grayscale(0);
+}
+
+.name_technologies {
+  color: color-mix(in srgb, var(--white), white 20%);
+  font-weight: 500;
+}
+
+.html,
+.css,
+.js {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--default-gap);
+}
+/* End of Habilities */
 
 .row {
   display: grid;
