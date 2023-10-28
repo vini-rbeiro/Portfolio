@@ -172,7 +172,20 @@ a {
 /* End of Projects */
 
 /* Start of Curriculum */
+.curriculum_center {
+  text-align: center;
+}
 
+.curriculum_center a,
+.curriculum_center i {
+  color: var(--highlight-color);
+  transition: transform 350ms ease-in-out;
+  font-size: 1rem;
+}
+
+.curriculum_center a:hover i{
+    transform: translateX(5px);
+}
 /* End of Curriculum */
 
 .row {
