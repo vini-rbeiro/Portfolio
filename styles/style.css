@@ -187,7 +187,7 @@ abbr {
   transform: rotate(45deg);
 }
 
-.project_text_description p a{
+.project_text_description p a {
   border-bottom: 1px dashed var(--strong-highlight);
 }
 
@@ -211,6 +211,22 @@ abbr {
 }
 /* End of Curriculum */
 
+/* focus */
+a:not(.curriculum_center a, .project_text_title a):focus {
+  outline: 2px solid var(--highlight-color);
+  outline-offset: 2px;
+}
+
+.curriculum_center a:focus{
+  outline: var(--strong-highlight) 2px solid;
+  background-color: var(--highlight-color);
+  color: white;
+}
+
+.curriculum_center a:focus i{
+  color: white;
+}
+/* end focus */
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -400,7 +416,7 @@ abbr {
   }
 
   .curriculum_center a:hover {
-    box-shadow: inset 125px 0 0 0 var(--highlight-color);
+    box-shadow: inset 180px 0 0 0 var(--highlight-color);
     border: 1px solid var(--highlight-color);
     color: white;
     outline: none;
