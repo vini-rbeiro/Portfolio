@@ -167,7 +167,6 @@ a {
 }
 
 .project .project_text_title a:hover i {
-  transform: translateX(7px);
   transform: rotate(45deg);
 }
 
@@ -202,7 +201,8 @@ a {
   gap: var(--default-gap);
 }
 
-.row:not(:first-child), #curriculum{
+.row:not(:first-child),
+#curriculum {
   margin-top: 2rem;
 }
 
@@ -212,12 +212,55 @@ a {
 
 /* md */
 @media screen and (min-width: 46.25em) /* 740px */ {
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .personal-info_description{
+    max-width: 80%;
+  }
+
   #about-me {
     align-items: center;
   }
 
   .about-me_containerImage > img {
     display: inline-block;
+  }
+
+  .project {
+    display: flex;
+    align-items: center;
+  }
+
+  .project:nth-child(even) {
+    flex-direction: row;
+    text-align: right;
+  }
+
+  .project:nth-child(even) .project_text_title h3 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+  }
+
+  .project:nth-child(even) .project_text_title h3 i {
+    transition: 350ms;
+    transform: rotateY(180deg);
+  }
+
+  .project:nth-child(even) .project_text_title a:hover h3 i {
+    transform: rotateY(180deg) rotate(45deg);
+  }
+
+  .project:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .project .project_image {
+    min-width: 50%;
+    max-width: 50%;
   }
 
   .row {
@@ -228,7 +271,15 @@ a {
     grid-column: span 5;
   }
 
+  .row > .md-6 {
+    grid-column: span 6;
+  }
+
   .row > .md-7 {
     grid-column: span 7;
   }
+}
+
+@media screen and (min-width: 64em) /* 1024px */ {
+  
 }
