@@ -121,6 +121,7 @@ a {
   width: 70px;
   filter: grayscale(1);
   transition: filter 350ms;
+  cursor: pointer;
 }
 
 .habilities_technologies img:hover {
@@ -186,12 +187,7 @@ a {
 .curriculum_center a,
 .curriculum_center i {
   color: var(--highlight-color);
-  transition: transform 350ms ease-in-out;
   font-size: 1rem;
-}
-
-.curriculum_center a:hover i {
-  transform: translateX(5px);
 }
 /* End of Curriculum */
 
@@ -216,12 +212,17 @@ a {
     font-size: 1.4rem;
   }
 
-  .personal-info_description{
+  .personal-info_description {
     max-width: 80%;
   }
 
   #about-me {
     align-items: center;
+  }
+
+  .about-me_containerImage {
+    display: flex;
+    justify-content: center;
   }
 
   .about-me_containerImage > img {
@@ -281,5 +282,105 @@ a {
 }
 
 @media screen and (min-width: 64em) /* 1024px */ {
-  
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  #header {
+    align-items: center;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .personal-info_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .personal-info_icons {
+    flex-direction: row;
+  }
+
+  .personal-info_icons i {
+    font-size: 2rem;
+  }
+
+  /* start of about-me */
+  .about-me_description {
+    max-width: 90%;
+  }
+  /* end of about-me */
+
+  /* start of habilities */
+  .habilities_technologies img{
+    width: 90px;
+  }
+  /* end of habilities */
+
+  /* start of projects */
+  .project {
+    gap: 3rem;
+    margin-top: 5.5rem;
+  }
+
+  .project_text {
+    gap: 1.5rem;
+  }
+  /* end of projects */
+
+  /* start of curriculum */
+  #curriculum {
+    padding-bottom: 1rem;
+  }
+
+  .curriculum_center a {
+    padding: 0.8rem;
+    outline: 1px solid var(--highlight-color);
+    border-radius: 6px;
+
+    box-shadow: inset 0 0 0 0 var(--highlight-color);
+    /* margin: 0 -0.25rem; */
+    /* padding: 0 0.25rem; */
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .curriculum_center a:hover i {
+    color: white;
+  }
+
+  .curriculum_center a:hover {
+    box-shadow: inset 125px 0 0 0 var(--highlight-color);
+    border: 1px solid var(--highlight-color);
+    color: white;
+    outline: none;
+  }
+  /* end of curriculum */
+
+  .row:not(:first-child),
+  #curriculum {
+    margin-top: 4rem;
+  }
+
+  .row > .lg-6 {
+    grid-column: span 6;
+  }
 }
