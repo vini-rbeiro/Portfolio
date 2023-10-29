@@ -50,6 +50,16 @@ a {
   color: inherit;
 }
 
+dfn {
+  font-style: normal;
+}
+
+abbr {
+  text-decoration: none;
+  border-bottom: 0.1em dotted;
+  cursor: help;
+}
+
 .maxWidth {
   max-width: 94%;
   margin: auto;
@@ -175,6 +185,10 @@ a {
 
 .project .project_text_title a:hover i {
   transform: rotate(45deg);
+}
+
+.project_text_description p a{
+  border-bottom: 1px dashed var(--strong-highlight);
 }
 
 .project_image img {
