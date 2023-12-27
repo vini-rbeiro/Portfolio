@@ -60,6 +60,11 @@ abbr {
   cursor: help;
 }
 
+.abbr_curriculo {
+  cursor: initial;
+  border: none;
+}
+
 .maxWidth {
   max-width: 94%;
   margin: auto;
@@ -134,13 +139,8 @@ abbr {
 
 .habilities_technologies img {
   width: 70px;
-  filter: grayscale(1);
-  transition: filter 350ms;
-  cursor: pointer;
-}
 
-.habilities_technologies img:hover {
-  filter: grayscale(0);
+  cursor: pointer;
 }
 
 .name_technologies {
@@ -158,12 +158,33 @@ abbr {
 }
 /* End of Habilities */
 
+/* Start of Experience */
+.experiences_1 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.experiences_1_content h3 {
+  font-size: 16px;
+}
+
+.logo_recargapay {
+  /* width: 170px; */
+  width: 140px;
+  background-color: rgba(237, 235, 230, 0.35);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 3px;
+}
+/* End of Experience */
+
 /* Start of Projects */
 .project {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .project_text {
@@ -199,42 +220,13 @@ abbr {
 }
 /* End of Projects */
 
-/* Start of Curriculum */
-.curriculum_center {
-  text-align: center;
-}
-
-.curriculum_center a,
-.curriculum_center i {
-  color: var(--highlight-color);
-  font-size: 1rem;
-}
-/* End of Curriculum */
-
-/* focus */
-a:not(.curriculum_center a, .project_text_title a):focus {
-  outline: 2px solid var(--highlight-color);
-  outline-offset: 2px;
-}
-
-.curriculum_center a:focus{
-  outline: var(--strong-highlight) 2px solid;
-  background-color: var(--highlight-color);
-  color: white;
-}
-
-.curriculum_center a:focus i{
-  color: white;
-}
-/* end focus */
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--default-gap);
 }
 
-.row:not(:first-child),
-#curriculum {
+.row:not(:first-child) {
   margin-top: 2rem;
 }
 
@@ -268,6 +260,11 @@ a:not(.curriculum_center a, .project_text_title a):focus {
     display: inline-block;
   }
   /* end of about me */
+
+  /* start of experience */
+  .experiences_1_content h3 {
+    font-size: 18.72px;
+  }
 
   /* start of project */
   .project {
@@ -308,6 +305,11 @@ a:not(.curriculum_center a, .project_text_title a):focus {
 
   .row {
     column-gap: var(--default-gap-md);
+    grid-auto-flow: dense;
+  }
+
+  .row > .md-1-6{
+    grid-column: 1 / 7;
   }
 
   .row > .md-5 {
@@ -320,6 +322,10 @@ a:not(.curriculum_center a, .project_text_title a):focus {
 
   .row > .md-7 {
     grid-column: span 7;
+  }
+
+  .row > .md-7-12{
+    grid-column: 7 / 13;
   }
 }
 
@@ -377,6 +383,12 @@ a:not(.curriculum_center a, .project_text_title a):focus {
   /* start of habilities */
   .habilities_technologies img {
     width: 90px;
+    filter: grayscale(1);
+    transition: filter 350ms;
+  }
+
+  .habilities_technologies img:hover {
+    filter: grayscale(0);
   }
   /* end of habilities */
 
@@ -391,40 +403,7 @@ a:not(.curriculum_center a, .project_text_title a):focus {
   }
   /* end of projects */
 
-  /* start of curriculum */
-  #curriculum {
-    padding-bottom: 1rem;
-  }
-
-  .curriculum_center a,
-  .curriculum_center i {
-    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-
-  .curriculum_center a {
-    padding: 0.8rem;
-    outline: 1px solid var(--highlight-color);
-    border-radius: 6px;
-
-    box-shadow: inset 0 0 0 0 var(--highlight-color);
-    /* margin: 0 -0.25rem; */
-    /* padding: 0 0.25rem; */
-  }
-
-  .curriculum_center a:hover i {
-    color: white;
-  }
-
-  .curriculum_center a:hover {
-    box-shadow: inset 180px 0 0 0 var(--highlight-color);
-    border: 1px solid var(--highlight-color);
-    color: white;
-    outline: none;
-  }
-  /* end of curriculum */
-
-  .row:not(:first-child),
-  #curriculum {
+  .row:not(:first-child) {
     margin-top: 4rem;
   }
 

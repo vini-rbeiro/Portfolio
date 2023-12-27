@@ -28,13 +28,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    <script
+      src="https://kit.fontawesome.com/95a5f1d071.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    ></script>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Portfólio Vinícius Ribeiro</title>
@@ -54,10 +51,11 @@
             <div class="personal-info_description">
               <p>
                 Tenho 17 anos e meu grande sonho é me tornar um desenvolvedor
-                <strong>Frontend</strong> altamente qualificado. <br />
+                <strong>Frontend</strong> altamente qualificado.
+              </p>
+              <p>
                 Atualmente, estou focando meus estudos em <strong>HTML</strong>,
-                <strong>CSS</strong> e <strong>Javascript</strong>. Em um futuro
-                próximo, pretendo adquirir conhecimento em algum framework.
+                <strong>CSS</strong> e <strong>Javascript</strong>.
               </p>
             </div>
           </div>
@@ -72,11 +70,22 @@
               <i class="fa-brands fa-twitter"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/vin%C3%ADcius-ribeiro-a90511289/"
+              href="https://www.linkedin.com/in/vin%C3%ADcius-ribeiro-da-silva-a90511289/"
               target="_blank"
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
+            <dfn>
+              <abbr class="abbr_curriculo" title="Currículo">
+                <a
+                  href="assets/pdf/curriculo.pdf"
+                  download="curriculo_vinicius"
+                  aria-label="Baixar currículo"
+                >
+                  <i class="fa-regular fa-file"></i>
+                </a>
+              </abbr>
+            </dfn>
           </div>
         </div>
         <figure class="header_image sm-12 lg-6">
@@ -90,12 +99,10 @@
 
       <!-- Start of Section About me -->
       <section id="about-me" class="row">
-        <div class="about-me_containerText sm-12 md-7">
-          <div class="about-me_title">
-            <h2>Sobre</h2>
-          </div>
+        <div class="about-me_containerText sm-12 md-7-12">
+          <h2 class="about-me_title">Sobre</h2>
+
           <div class="about-me_description">
-            <p></p>
             <p>
               Sou um garoto jovem que desde novo tenho esse interesse pela parte
               da <strong>tecnologia</strong> e acabei que nesses tempos resolvi
@@ -117,7 +124,7 @@
             </p>
           </div>
         </div>
-        <figure class="about-me_containerImage md-5">
+        <figure class="about-me_containerImage md-1-6">
           <img
             src="assets/imagens/filtro-3-semBackground.png"
             alt="Foto em estilo animado representando Vinícius Ribeiro"
@@ -128,9 +135,8 @@
 
       <!-- Start of Section Habilities -->
       <section id="habilities" class="row">
-        <div class="habilities_title">
-          <h2>Habilidades</h2>
-        </div>
+        <h2 class="habilities_title">Habilidades</h2>
+
         <div class="habilities_technologies sm-12">
           <div class="html">
             <img src="assets/imagens/html5.png" alt="Logo do HTML5" />
@@ -150,24 +156,29 @@
 
       <!-- Start of Section Experience -->
       <section id="experience" class="row">
-        <div class="experience_title sm-12">
-          <h2>Experiência profissional</h2>
-        </div>
+        <h2 class="experience_title sm-12">Experiência profissional</h2>
 
         <div class="experiences sm-12">
-          <p>
-            Sem experiências <strong>até o momento</strong>.
-            <span style="font-size: 1.5rem">😭</span>
-          </p>
+          <div class="experiences_1">
+            <img
+              class="logo_recargapay"
+              src="assets/imagens/logo_recargapay.png"
+              alt="Logo RecargaPay"
+            />
+
+            <div class="experiences_1_content">
+              <h3>Jovem Aprendiz</h3>
+              <p>01/2023 - Atual</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- End of Section Experience -->
 
       <!-- Start of Section Projects -->
       <section id="projects" class="row">
-        <div class="projects_title sm-12">
-          <h2>Projetos</h2>
-        </div>
+        <h2 class="projects_title sm-12">Projetos</h2>
+
         <div class="project sm-12" style="margin-top: 0">
           <div class="project_text md-6">
             <div class="project_text_title">
@@ -181,7 +192,10 @@
               <p>
                 Essa landing page totalmente responsiva e consideravelmente
                 genérica, contém por exemplo: feedbacks de "clientes" e
-                parcerias. <br />
+                parcerias.
+              </p>
+
+              <p>
                 Este projeto foi desenvolvido pelo
                 <a href="https://www.figma.com/@matheusdias20"
                   >@matheusdias20</a
@@ -216,7 +230,9 @@
               <p>
                 Essa landing page retrata um dashboard genérico, por ser
                 existente em diversos sites, essa página foi considerada um
-                projeto de mundo real. <br />
+                projeto de mundo real.
+              </p>
+              <p>
                 Esse projeto também foi desenvolvido durante o curso
                 <a href="https://serliv.com/" target="_blank">Serliv</a> com o
                 foco da prática do que vem sendo estudado.
@@ -233,26 +249,5 @@
       </section>
       <!-- End of Section Projects -->
     </div>
-
-    <!-- Start of Section Curriculum -->
-    <section id="curriculum">
-      <div class="maxWidth maxWidth-second row">
-        <div class="curriculum_title">
-          <h2>Currículo</h2>
-        </div>
-
-        <div class="curriculum_center sm-12">
-          <a
-            href="assets/pdf/curriculo.pdf"
-            download="currículo_vinicius"
-            aria-label="Baixar currículo"
-          >
-            Baixar CV
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- End of Section Curriculum -->
   </body>
 </html>
