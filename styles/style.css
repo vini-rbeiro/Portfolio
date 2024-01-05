@@ -82,6 +82,10 @@ abbr {
   color: var(--strong-highlight);
 }
 
+.filter_dropshadow {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.849));
+}
+
 /* Start of Header */
 #header {
   min-height: 100vh;
@@ -308,7 +312,7 @@ abbr {
     grid-auto-flow: dense;
   }
 
-  .row > .md-1-6{
+  .row > .md-1-6 {
     grid-column: 1 / 7;
   }
 
@@ -324,7 +328,7 @@ abbr {
     grid-column: span 7;
   }
 
-  .row > .md-7-12{
+  .row > .md-7-12 {
     grid-column: 7 / 13;
   }
 }
