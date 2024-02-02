@@ -11,7 +11,7 @@
 <p><a href="https://vini-rbeiro.github.io/Portfolio/">Clique aqui</a> para acessar o portfólio.</p>
 <br><p>:iphone: <b>Funcionalidade 1</b>: A página tem uma responsividade satisfatória para qualquer dispositivo (mobile, tablet e desktop).</p> <br>
 
-![screencapture-vini-rbeiro-github-io-Portfolio-2023-12-26-22_24_06](https://github.com/vini-rbeiro/Portfolio/assets/95951039/04ccc744-6e28-4f17-9da6-6388078355e5)
+![screencapture-vini-rbeiro-github-io-Portfolio-2024-01-04-23_18_34](https://github.com/vini-rbeiro/Portfolio/assets/95951039/63541787-457c-495a-988c-342317371d06)
 
 <h2>:computer: Tecnologias usadas</h2>
 
